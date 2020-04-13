@@ -9,3 +9,25 @@
  5. See HTML
  6. Create a new img element and set its src attribute to a picture of you.Append that element to the page.
  */
+
+const body = document.querySelector('body');
+const nickName = document.querySelector('#nickname');
+const favFood = document.querySelector('#fav-food');
+const hometown = document.querySelector('#hometown');
+const liAll = document.querySelectorAll('li');
+
+//chnaging body font family
+body.style.fontFamily = "Arial, sans-serif"
+
+//adding personel info
+nickName.textContent = 'obeka';
+favFood.textContent = 'fried cornbreaded anchovies';
+hometown.textContent = 'Turkey, Ankara';
+
+//Iterating through all li elements adn addind class
+liAll.forEach(li => li.classList.add('list-item'));
+
+//creating a img 
+const profilePic = document.createElement('img');
+profilePic.setAttribute('src', "https://i.postimg.cc/3ryssJp1/Webp-net-resizeimage.jpg");
+body.appendChild(profilePic);

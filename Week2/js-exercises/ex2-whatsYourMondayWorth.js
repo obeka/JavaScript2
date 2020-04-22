@@ -14,6 +14,13 @@
 
 function dayWorth(tasks, hourlyRate) {
   // put your code in here, the function does returns a euro formatted string
+  const sum = tasks
+    .map(task => task.duration)
+    .reduce((acc, curr) => {
+      return ((acc + curr) / 60 * hourlyRate)
+    }, 0);
+
+  return Math.round(sum * 100) / 100
 }
 
 const mondayTasks = [{
@@ -33,6 +40,7 @@ const mondayTasks = [{
     duration: 60,
   },
 ];
+
 
 console.log(dayWorth(mondayTasks, 25))
 console.log(dayWorth(mondayTasks, 13.37))

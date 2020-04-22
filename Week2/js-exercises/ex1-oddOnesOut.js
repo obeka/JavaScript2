@@ -7,7 +7,7 @@
  The function should still behave the same.
 
  */
-function doubleEvenNumbers(numbers) {
+/* function doubleEvenNumbers(numbers) {
   const newNumbers = [];
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
@@ -18,4 +18,12 @@ function doubleEvenNumbers(numbers) {
 }
 
 const myNumbers = [1, 2, 3, 4];
-console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
+console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console */
+
+const myNumbers = [1, 2, 3, 4];
+
+const doubleEvenNumbers = myNumbers
+  .filter(num => num % 2 === 0)
+  .map(num => num * 2);
+
+console.log(doubleEvenNumbers);

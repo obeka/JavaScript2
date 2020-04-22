@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+body {
+  background-color: #1E555C;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+
+}
+
+h3 {
+  font-size: 2em;
+}
+
+button {
+  background-color: #1E555C;
+  color: white;
+  padding: 8px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  transition: all 0.3s;
+  opacity: 0.5;
+  transform: scale(1.1)
+}
+
+#app {
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.timer {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+
+.timer span {
+  font-size: 26px;
+  margin: 0 10px;
+}
+
+#showcase {
+  border: 6px solid #14363A;
+  width: 60%;
+  margin: 10px auto;
+  padding: 16px;
+  border-radius: 30px;
+}
+
+p {
+  font-size: 3em;
+}
+
+#spanM,
+#spanS {
+  font-family: 'Orbitron',
+    sans-serif;
+}
+
+#play {
+  margin-right: 1px;
+}
+
+.fade {
+  opacity: 0.5 !important;
+}
+
+.d-none {
+  display: none;
+}
+
+/*Time up effect*/
+.time-up {
+  -webkit-animation: color-change 0.5s infinite;
+  -moz-animation: color-change 0.5s infinite;
+  -o-animation: color-change 0.5s infinite;
+  -ms-animation: color-change 0.5s infinite;
+  animation: color-change 0.5s infinite;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px red;
+  margin-top: 10px;
+  font-family: 'Orbitron',
+    sans-serif;
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
+@-moz-keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
+@-ms-keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
+@-o-keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: yellow;
+  }
+}

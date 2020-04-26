@@ -39,12 +39,13 @@ function countDownClock() {
     }
     //Sound effect when finished
     if (timerMilisecVal < 2000) {
+
       timeUpDisplay();
       sound.play();
     }
     //Calculating time each interval and changing timer display
     if (!timeTo.classList.contains('paused')) {
-      timerMilisecVal -= 100;
+      timerMilisecVal -= 1000;
       const countdownTime = new Date(timerMilisecVal);
       let countdownMinute = countdownTime.getMinutes();
       let countdownSecond = countdownTime.getSeconds();

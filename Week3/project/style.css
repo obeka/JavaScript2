@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+body {
+  background-image: url('./img/cafe.png');
+  background-size: cover;
+  background-attachment: scroll;
+
+}
+
+#app {
+  max-width: 350px;
+  margin: 70px auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+
+}
+
+#header {
+  text-align: center;
+  padding: 12px;
+  background-color: #888888;
+  color: beige;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 20px;
+}
+
+form {
+  padding: 20px 30px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #888888;
+  font-size: 18px;
+}
+
+#euro-card {
+  display: flex;
+}
+
+#euro-card input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#euro {
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+  background-color: #888888;
+  color: beige;
+  font-weight: 700;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #27496d;
+  font-size: 16px;
+  color: white;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .4s;
+  outline: none;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+option {
+  padding: 14px;
+  font-size: 22px;
+}
+
+.tip {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5em;
+  color: #84142d;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.fade {
+  display: none;
+}
+
+.alert-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(179, 179, 179, 0.47);
+  top: 0;
+  left: 0;
+}
+
+.alert-box {
+  width: 40%;
+  height: 140px;
+  margin: 200px auto;
+  background-color: beige;
+  border-radius: 10px;
+  position: relative;
+}
+
+#info {
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px 15px;
+  color: black;
+}
+
+#fill {
+  padding: 10px 15px;
+}
+
+#ok {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 50px;
+  padding: 8px;
+}

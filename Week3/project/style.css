@@ -106,6 +106,7 @@ option {
 
 .fade {
   display: none;
+  transition: 10s;
 }
 
 .alert-container {

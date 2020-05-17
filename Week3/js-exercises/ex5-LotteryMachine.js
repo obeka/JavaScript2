@@ -35,12 +35,10 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
   numbers.forEach(number => {
-    if (number % 3 === 0 && number % 5 === 0) {
+    if (number % 3 === 0) {
       threeCallback();
-      fiveCallback();
-    } else if (number % 3 === 0) {
-      threeCallback();
-    } else if (number % 5 === 0) {
+    }
+    if (number % 5 === 0) {
       fiveCallback();
     }
   })

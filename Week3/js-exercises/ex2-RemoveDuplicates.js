@@ -14,15 +14,12 @@ does not return anything but removes any duplicate elements from the array.
 
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 
-function removeDuplicates(array) {
-  array.forEach((item, index, self) => {
-    while (index !== self.lastIndexOf(item)) {
-      self.splice(array.lastIndexOf(item), 1);
-    }
-  });
-
-  return array;
-}
-
-removeDuplicates(letters);
-console.log(letters);
+let uniqueLetters = [];
+// Index of checks if the array has the letter and returns the index value of the letter
+//If it returns -1, it means the array does'nt have the letter.
+letters.forEach(letter => {
+  if (uniqueLetters.indexOf(letter) === -1) {
+    uniqueLetters.push(letter);
+  }
+});
+console.log(uniqueLetters);
